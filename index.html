@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>Oráculo Velado</title>
+    <meta name="description" content="Investigue os riscos da inteligência artificial em um duelo educativo contra o Oráculo Velado.">
+    <link rel="icon" href="assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="executable.css" />
+    <link rel="stylesheet" href="gazette.css" />
+  </head>
+  <body>
+    <main id="app"></main>
+    <dialog id="reader" aria-label="Carta revelada">
+      <div class="reading-navigation" hidden>
+        <button id="reading-pause" type="button">Menu / Pausar</button>
+      </div>
+      <div id="reading"></div>
+      <button id="continue"></button>
+    </dialog>
+    <dialog id="pause-menu" aria-labelledby="pause-title"></dialog>
+    <script src="data.js"></script>
+    <script src="engine.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
